@@ -10,11 +10,11 @@ import Foundation
 
 extension URLRequest {
     
-    static public func getFormSirasa() -> URLRequest {
+    static public func getFormStore() -> URLRequest {
         var component: URLComponents?
-        component = URLComponents(string:"https://swapi.dev/api/planets")
-        
+        component = URLComponents(string:"https://api.jsonbin.io/v3/b/630a6a2ae13e6063dc8ea5bf")
         var request = URLRequest(url: (component?.url)!)
+        request.addValue("$2b$10$0qFR94pedM8qVQi1oCCLyucRHw9aLdLTSFI/3ZrB3/BMHpteuYuUu", forHTTPHeaderField: "X-MASTER-KEY")
         request.httpMethod = "GET"
         return request
     }
@@ -38,7 +38,7 @@ extension URLSession {
             }
             if let response = resp as? HTTPURLResponse {
                 // print the response
-                print(response)
+              //  print(response)
                 if response.statusCode == 200 {
                     let response = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)! as String
                     Functions.printdetails(msg: "|| Retrieved data from \(request.url?.absoluteString ?? "")")

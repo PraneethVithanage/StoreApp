@@ -14,25 +14,26 @@ struct StoreList: View {
     @State var isLoarding: Bool = false
     
     init() {
-       UITableView.appearance().separatorStyle = .none
-       UITableViewCell.appearance().backgroundColor = .white
-       UITableView.appearance().backgroundColor = .white
-       UITableView.appearance().contentInset.top = -35
+        UITableView.appearance().separatorStyle = .none
+        UITableViewCell.appearance().backgroundColor = .white
+        UITableView.appearance().backgroundColor = .white
+        UITableView.appearance().contentInset.top = -35
     }
     
     var body: some View {
-        LoadingView(isShowing: .constant(viewModel.promotionLists == nil)) {
+        LoadingView(isShowing: .constant(viewModel.storeDataLists == nil)) {
             NavigationView {
                 VStack(spacing: 0){
                     HeaderView()
                         .edgesIgnoringSafeArea(.all)
                         .frame(width: UIScreen.main.bounds.size.width,height: 225, alignment: .center)
                     List {
-                        ForEach(viewModel.promotionLists?.results ?? [], id: \.name) { result in
+                        ForEach(viewModel.storeDataLists ?? [], id: \.id) { result in
                             ZStack {
-                                StoreRow(planets: result)
+                                StoreRow(storeData: result)
                                     .buttonStyle(PlainButtonStyle())
-                                NavigationLink(destination: StoreDetails(planets: result)) {
+                                
+                                NavigationLink(destination: StoreDetails(storeData: result)) {
                                     EmptyView()
                                 }.buttonStyle(PlainButtonStyle()).opacity(0)
                             }

@@ -9,30 +9,41 @@ import Foundation
 import CoreLocation
 import SwiftUI
 
-// MARK: - Panats
-struct Panats: Codable {
-    let count: Int
-    let next: String
-    let previous: JSONNull?
-    let results: [ResultData]
+// MARK: - Store
+struct Store: Codable {
+    let record: Record
+    let metadata: Metadata
 }
 
-// MARK: - Result
-struct ResultData: Codable {
-    let name, rotationPeriod, orbitalPeriod, diameter: String
-    let climate, gravity, terrain, surfaceWater: String
-    let population: String
-    let residents, films: [String]
-    let created, edited: String
-    let url: String
-    
+// MARK: - Metadata
+struct Metadata: Codable {
+    let id: String
+    let metadataPrivate: Bool
+    let createdAt: String
+
     enum CodingKeys: String, CodingKey {
-        case name
-        case rotationPeriod = "rotation_period"
-        case orbitalPeriod = "orbital_period"
-        case diameter, climate, gravity, terrain
-        case surfaceWater = "surface_water"
-        case population, residents, films, created, edited, url
+        case id
+        case metadataPrivate = "private"
+        case createdAt
+    }
+}
+
+// MARK: - Record
+struct Record: Codable {
+    let stores: [StoreElement]
+}
+
+// MARK: - StoreElement
+struct StoreElement: Codable {
+    let id, name, storeDescription: String
+    let image: String
+    let distance: String
+    let isDeliveryAvailable: Bool
+
+    enum CodingKeys: String, CodingKey {
+        case id, name
+        case storeDescription = "description"
+        case image, distance, isDeliveryAvailable
     }
 }
 

@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct  StoreDetails: View {
-    var planets: ResultData
+    var storeData : StoreElement?
     
     var body: some View {
         VStack {
-            Image(systemName: "planet").data(url: URL(string: "https://picsum.photos/id/" + "\(planets.rotationPeriod)" + "/200/300")!)
+            
+            Image(systemName: "planet").data(url: URL(string: (storeData?.image != "" ? storeData!.image : "https://rb.gy/pp18lh" ))!)
                 .resizable()
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
@@ -23,26 +24,28 @@ struct  StoreDetails: View {
             VStack (alignment:.center){
                 
                 VStack (alignment:.center){
-                    Text(" Planet Name")
+                    Text(" Store Name")
                         .font(.subheadline)
-                        .foregroundColor(.gray)
-                    Text(planets.name)
+                        .foregroundColor(Theme.secondry.color)
+                    Text(storeData?.name ?? "")
+                        .multilineTextAlignment(.center)
                         .font(.title)
                 }.padding(20)
                 
                 VStack (alignment:.center){
-                    Text(" Planet Orbital Period")
+                    Text(" Store Description")
                         .font(.subheadline)
-                        .foregroundColor(.gray)
-                    Text(planets.orbitalPeriod)
+                        .foregroundColor(Theme.secondry.color)
+                    Text(storeData?.storeDescription ?? "")
+                        .multilineTextAlignment(.center)
                         .font(.subheadline)
                 }.padding(20)
                 
                 VStack (alignment:.center){
-                    Text("Planet Gravity")
+                    Text(" Store distance")
                         .font(.subheadline)
-                        .foregroundColor(.gray)
-                    Text(planets.gravity)
+                        .foregroundColor(Theme.secondry.color)
+                    Text(storeData?.distance ?? "")
                         .font(.subheadline)
                 }.padding(20)
                 

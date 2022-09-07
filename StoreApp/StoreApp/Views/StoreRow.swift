@@ -8,41 +8,40 @@
 import SwiftUI
 
 struct StoreRow: View {
-    var planets: ResultData
+    var storeData : StoreElement?
     
     var body: some View {
         VStack{
             HStack {
-                Image(systemName: "planet").data(url: URL(string: "https://picsum.photos/id/" + "\(planets.rotationPeriod)" + "/200/300")!)
+                Image(systemName: "planet").data(url: URL(string: (storeData?.image != "" ? storeData!.image : "https://rb.gy/pp18lh" ))!)
                     .resizable()
+                    .frame(width: 50, height: 50)
                     .scaledToFit()
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 1))
                     .shadow(radius: 2)
-                    .frame(width: 70, height: 70)
-                    
-                // Use the smaple images for the planet icons.
+                    .padding(10)
                 
                 VStack (alignment:.leading){
-                    Text(planets.name)
+                    Text(storeData?.name ?? "")
                         .fontWeight(.bold)
                         .font(.system(size: 13))
-                    Text("modern implementation of the equivalent-linear ")
+                        .padding(.vertical,5)
+                    Text(storeData?.storeDescription ?? "")
                         .lineLimit(nil)
                         .fixedSize(horizontal: false, vertical: true)
                         .font(.system(size: 12))
-                        .foregroundColor(.gray)
-                       
+                        .foregroundColor(Theme.secondry.color)
                 }
                 Spacer()
             }
             Divider()
                 .frame(height: 1)
-                .background(.gray.opacity(0.3))
+                .background(Theme.secondry.color.opacity(0.3))
                 .padding(.leading, 50)
             HStack {
                 Spacer()
-                Text("2.3km")
+                Text(storeData?.distance ?? "")
                     .fontWeight(.bold)
                     .font(.system(size: 11))
                 Spacer()
@@ -71,20 +70,20 @@ struct StoreRow: View {
             
         }
         .padding(5)
-       
+        
         .contentShape(Rectangle())
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .strokeBorder(style: StrokeStyle(lineWidth: 1))
-                    .foregroundColor(.gray.opacity(0.3))
-                    .shadow(radius: 1)
-            )
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .strokeBorder(style: StrokeStyle(lineWidth: 1))
+                .foregroundColor(Theme.secondry.color.opacity(0.3))
+                .shadow(radius: 1)
+        )
     }
 }
 
 /**
  Use  for  set image from url for imageView
-*/
+ */
 extension Image {
     func data(url:URL) -> Self {
         if let data = try? Data(contentsOf: url) {
