@@ -9,19 +9,35 @@
 /* Begin PBXBuildFile section */
 		84C0374828C8DF530037DC80 /* StoreAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0373828C8DF510037DC80 /* StoreAppApp.swift */; };
 		84C0374928C8DF530037DC80 /* StoreAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0373828C8DF510037DC80 /* StoreAppApp.swift */; };
-		84C0374A28C8DF530037DC80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0373928C8DF510037DC80 /* ContentView.swift */; };
-		84C0374B28C8DF530037DC80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0373928C8DF510037DC80 /* ContentView.swift */; };
-		84C0374C28C8DF530037DC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C0373A28C8DF520037DC80 /* Assets.xcassets */; };
-		84C0374D28C8DF530037DC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C0373A28C8DF520037DC80 /* Assets.xcassets */; };
+		84C0375C28C8E0EF0037DC80 /* StoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0375B28C8E0EF0037DC80 /* StoreList.swift */; };
+		84C0375E28C8E1520037DC80 /* StoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0375D28C8E1520037DC80 /* StoreRow.swift */; };
+		84C0376028C8E1AB0037DC80 /* StoreDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0375F28C8E1AB0037DC80 /* StoreDetails.swift */; };
+		84C0376228C8E1E60037DC80 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0376128C8E1E60037DC80 /* HeaderView.swift */; };
+		84C0376528C8E2330037DC80 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0376428C8E2330037DC80 /* StoreViewModel.swift */; };
+		84C0376828C8E2850037DC80 /* MIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0376728C8E2850037DC80 /* MIError.swift */; };
+		84C0376A28C8E2C10037DC80 /* StoreDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0376928C8E2C10037DC80 /* StoreDataList.swift */; };
+		84C0376D28C8E30F0037DC80 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0376C28C8E30F0037DC80 /* StoreService.swift */; };
+		84C0376F28C8E3E10037DC80 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0376E28C8E3E10037DC80 /* CircleImage.swift */; };
+		84C0377128C8E40D0037DC80 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0377028C8E40D0037DC80 /* LoadingView.swift */; };
+		84C0377328C8E4F20037DC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C0377228C8E4F20037DC80 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84C0373828C8DF510037DC80 /* StoreAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAppApp.swift; sourceTree = "<group>"; };
-		84C0373928C8DF510037DC80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		84C0373A28C8DF520037DC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C0373F28C8DF520037DC80 /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C0374528C8DF530037DC80 /* StoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C0374728C8DF530037DC80 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		84C0375B28C8E0EF0037DC80 /* StoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreList.swift; sourceTree = "<group>"; };
+		84C0375D28C8E1520037DC80 /* StoreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRow.swift; sourceTree = "<group>"; };
+		84C0375F28C8E1AB0037DC80 /* StoreDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetails.swift; sourceTree = "<group>"; };
+		84C0376128C8E1E60037DC80 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		84C0376428C8E2330037DC80 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		84C0376728C8E2850037DC80 /* MIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIError.swift; sourceTree = "<group>"; };
+		84C0376928C8E2C10037DC80 /* StoreDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDataList.swift; sourceTree = "<group>"; };
+		84C0376C28C8E30F0037DC80 /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		84C0376E28C8E3E10037DC80 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		84C0377028C8E40D0037DC80 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		84C0377228C8E4F20037DC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +61,10 @@
 		84C0373228C8DF500037DC80 = {
 			isa = PBXGroup;
 			children = (
-				84C0373728C8DF510037DC80 /* Shared */,
+				84C0375628C8E0660037DC80 /* StoreApp */,
 				84C0374628C8DF530037DC80 /* macOS */,
 				84C0374028C8DF520037DC80 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		84C0373728C8DF510037DC80 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				84C0373828C8DF510037DC80 /* StoreAppApp.swift */,
-				84C0373928C8DF510037DC80 /* ContentView.swift */,
-				84C0373A28C8DF520037DC80 /* Assets.xcassets */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		84C0374028C8DF520037DC80 /* Products */ = {
@@ -76,6 +82,81 @@
 				84C0374728C8DF530037DC80 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		84C0375628C8E0660037DC80 /* StoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				84C0376B28C8E2DA0037DC80 /* Network */,
+				84C0376628C8E2640037DC80 /* Models */,
+				84C0376328C8E2070037DC80 /* ViewModel */,
+				84C0375928C8E0AE0037DC80 /* Views */,
+				84C0375728C8E08D0037DC80 /* Resources */,
+				84C0373828C8DF510037DC80 /* StoreAppApp.swift */,
+				84C0377228C8E4F20037DC80 /* Assets.xcassets */,
+			);
+			path = StoreApp;
+			sourceTree = "<group>";
+		};
+		84C0375728C8E08D0037DC80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84C0375828C8E0940037DC80 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84C0375828C8E0940037DC80 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84C0375928C8E0AE0037DC80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C0375B28C8E0EF0037DC80 /* StoreList.swift */,
+				84C0375D28C8E1520037DC80 /* StoreRow.swift */,
+				84C0375F28C8E1AB0037DC80 /* StoreDetails.swift */,
+				84C0376128C8E1E60037DC80 /* HeaderView.swift */,
+				84C0375A28C8E0B80037DC80 /* Supporting Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C0375A28C8E0B80037DC80 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C0376E28C8E3E10037DC80 /* CircleImage.swift */,
+				84C0377028C8E40D0037DC80 /* LoadingView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		84C0376328C8E2070037DC80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84C0376428C8E2330037DC80 /* StoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84C0376628C8E2640037DC80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84C0376728C8E2850037DC80 /* MIError.swift */,
+				84C0376928C8E2C10037DC80 /* StoreDataList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C0376B28C8E2DA0037DC80 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84C0376C28C8E30F0037DC80 /* StoreService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C0374C28C8DF530037DC80 /* Assets.xcassets in Resources */,
+				84C0377328C8E4F20037DC80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +246,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C0374D28C8DF530037DC80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +256,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C0374A28C8DF530037DC80 /* ContentView.swift in Sources */,
+				84C0376828C8E2850037DC80 /* MIError.swift in Sources */,
+				84C0375C28C8E0EF0037DC80 /* StoreList.swift in Sources */,
+				84C0376528C8E2330037DC80 /* StoreViewModel.swift in Sources */,
+				84C0377128C8E40D0037DC80 /* LoadingView.swift in Sources */,
+				84C0376228C8E1E60037DC80 /* HeaderView.swift in Sources */,
+				84C0375E28C8E1520037DC80 /* StoreRow.swift in Sources */,
+				84C0376028C8E1AB0037DC80 /* StoreDetails.swift in Sources */,
+				84C0376A28C8E2C10037DC80 /* StoreDataList.swift in Sources */,
 				84C0374828C8DF530037DC80 /* StoreAppApp.swift in Sources */,
+				84C0376D28C8E30F0037DC80 /* StoreService.swift in Sources */,
+				84C0376F28C8E3E10037DC80 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C0374B28C8DF530037DC80 /* ContentView.swift in Sources */,
 				84C0374928C8DF530037DC80 /* StoreAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
